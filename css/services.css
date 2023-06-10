@@ -1,0 +1,58 @@
+.services{
+    padding: 200px 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+}
+
+.services h1{
+    grid-column: 1/ -1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services span{
+    display: inline-block;
+    grid-column: 1/ -1;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.services h1 .green{
+    color: #38D065;
+    font-size: 2.5rem;
+}
+
+.services .service-box{
+    background-color: #f7f7f7;
+    
+}
+
+.services .service-box h3{
+  font-size:1.4rem;
+}
+
+.services .service-box p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services .service-box a{
+    padding: 1rem 2rem;
+    background-color: #38D065;
+    color: #fff;
+    border-radius: 50px;
+}
+
+
+@media (min-width:920px) {
+    .services{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

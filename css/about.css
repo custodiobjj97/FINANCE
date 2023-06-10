@@ -1,0 +1,75 @@
+.about{
+    padding: 200px 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../images/fun-facts-bg.jpg');
+    gap: 25px;
+
+}
+.about-text{
+    width: 100%;
+    text-align: left;
+    
+}
+.about-text p{
+color: #fff;
+margin-bottom: 1.2rem;
+}
+.about-text h2{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.about-text .green{
+    color:#38D065;
+}
+
+.about-text a{
+    background: #38D065;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.about-number{
+ display: grid;
+ align-items: center;
+ justify-content: center;
+ grid-template-columns: 1fr;
+ gap: 40px;
+}
+
+.about-number .box-number{
+    padding: 4rem 4rem;
+    background-color:#11111193;
+    text-align: center;
+}
+
+.about-number .box-number h3{
+    font-size: 2rem;
+    color: #38D065;
+    margin-bottom: 1.1rem;
+}
+
+
+.about-number .box-number p{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+
+@media (min-width:920px){
+    .about{
+        justify-content: space-between;
+        flex-direction:row;
+    }
+    .about-number{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-text{
+       width: 45%;
+    }
+}
